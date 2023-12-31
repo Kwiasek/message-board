@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    form(method="post" action="/new")
+        fieldset 
+            legend New message
+            p
+                label(for="messageUser") Username: 
+                    input(type="text" name="messageUser" id="messageUser")
+            p
+                label(for="messageText") Your message: 
+                    input(type="text" name="messageText" id="messageText")
+            p.buttons
+                input(type="submit" value="Send message")
